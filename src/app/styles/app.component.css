@@ -1,0 +1,21 @@
+.jumbotron-size{
+    height:100%;
+      padding-top:10%;
+      padding-bottom:10%;
+}
+
+.footer {
+    background:#363636;
+    margin-top:-30px;
+    position:relative;
+    padding: 0;
+}
+
+.footer p {
+    color:#fff;
+    font-size:1.2em;
+    line-height:30px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 30px;
+}
