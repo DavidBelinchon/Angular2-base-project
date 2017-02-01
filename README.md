@@ -9,6 +9,11 @@ This is a simple Angular2 project with some functionalities added to start worki
 - [x] Navbar
 - [x] Routing
 - [ ] Implements almost one: component, service, pipe, directive, module
+	- [x] component
+	- [ ] service
+	- [ ] pipe
+	- [ ] directive
+	- [x] module
 - [ ] Bootstrap
 - [ ] Sass
 - [ ] End-to-end tests
