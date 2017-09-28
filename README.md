@@ -14,7 +14,7 @@ This is a simple Angular2 project with some functionalities added to start worki
 	- [ ] pipe
 	- [ ] directive
 	- [x] module
-- [ ] Bootstrap
+- [x] Bootstrap
 - [ ] Sass
 - [ ] End-to-end tests
 - [ ] Angular i18n support
@@ -42,19 +42,15 @@ my-app/
 		about/
 			about.component.html
 			about.component.ts
-			index.ts
 		contact/
 			contact.component.html
 			contact.component.ts
-			index.ts
 		home/
 			home.component.html
 			home.component.ts
-			index.ts
 		navbar/
 			navbar.component.html
 			navbar.component.ts
-			index.ts
 		styles/
 			app.component.css
 		app.component.ts
