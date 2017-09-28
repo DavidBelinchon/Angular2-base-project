@@ -18,13 +18,8 @@ This is a simple Angular2 project with some functionalities added to start worki
 - [ ] Sass
 - [ ] End-to-end tests
 - [ ] Angular i18n support
-- [ ] Tasks
-	- [ ] Create new view, add route
-	- [ ] Create new service
-	- [ ] Create new pipe
-	- [ ] Create new directive
-- [ ] Docker
-- [ ] Node.js server to Prod version
+- [x] Docker
+- [x] Node.js server to Prod version
 - [x] Following the best practices.
 
 ## Folder Structure
@@ -37,6 +32,10 @@ my-app/
   	app.e2e-spec.ts
 	app.po.ts
 	tsconfig.json
+  node-server/
+  	app.js
+	package.json
+	.gitignore
   src/
   	app/
 		about/
@@ -70,6 +69,7 @@ my-app/
   .editorconfig
   .gitignore
   angular-cli.json
+  Dockerfile
   karma.conf.js
   package.json
   protractor.conf.js
@@ -86,15 +86,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. Use the `-prod` flag for a production build.
 
-## Running unit tests
+The build artifacts will be stored in the `node-server/dist/` directory.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Run build with Node server
 
-## Running end-to-end tests
+Go to folder node-server
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Run `npm install`
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+Run locally `node app.js`
+
+## Run Dockerfile
+
+Build image `docker build -t angular2 .` 
+
+Run image `docker run -it -p 3000:3000 angular2`
+
